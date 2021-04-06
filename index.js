@@ -4,7 +4,7 @@ const app = express()
   
 // Static Middleware
 //app.use(express.static(path.join(__dirname, 'public')))
-var public = path.join(__dirname, '/public');
+var public = path.join(__dirname, '/app');
 var vendor = path.join(__dirname, '/vendor');
 
 
