@@ -4,7 +4,8 @@ const app = express()
   
 // Static Middleware
 //app.use(express.static(path.join(__dirname, 'public')))
-var public = path.join(__dirname, 'public');
+var public = path.join(__dirname, '/public');
+var vendor = path.join(__dirname, '/vendor');
 
 
   
@@ -17,6 +18,7 @@ app.get('/', function(req, res) {
 });
 
 app.use('/', express.static(public));
+app.use('/', express.static(vendor));
   
 app.listen(8080, function(error){
     if(error) throw error
